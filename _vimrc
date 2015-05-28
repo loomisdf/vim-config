@@ -4,6 +4,9 @@ set runtimepath^=~/vimfiles/ctrlp.vim
 
 set autochdir
 
+"---VsVim compatibility
+set backspace=indent,eol,start
+
 "----General editing
 nnoremap <leader><leader> V
 vnoremap <leader><leader> V
@@ -14,19 +17,6 @@ nnoremap gj j
 nnoremap gk k
 inoremap <C-c> <ESC>
 vnoremap <C-c> <ESC>
-
-nnoremap <UP> <NOP>
-nnoremap <LEFT> <NOP>
-nnoremap <RIGHT> <NOP>
-nnoremap <DOWN> <NOP>
-vnoremap <UP> <NOP>
-vnoremap <LEFT> <NOP>
-vnoremap <RIGHT> <NOP>
-vnoremap <DOWN> <NOP>
-inoremap <UP> <NOP>
-inoremap <LEFT> <NOP>
-inoremap <RIGHT> <NOP>
-inoremap <DOWN> <NOP>
 
 "----File manipulation
 nnoremap <leader>w :w<CR>

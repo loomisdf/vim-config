@@ -18,6 +18,13 @@ nnoremap gk k
 inoremap <C-c> <ESC>
 vnoremap <C-c> <ESC>
 
+"---Set backup directory
+if has('win32')
+  set backupdir=C:\vimtmp,.
+else
+  set backupdir=~/vimtmp,.
+endif
+
 "----File manipulation
 nnoremap <leader>w :w<CR>
 
